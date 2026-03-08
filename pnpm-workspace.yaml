@@ -1,0 +1,20 @@
+packages:
+  - .
+  - ui
+  - packages/*
+  - extensions/*
+
+ignorePostinstallScripts: '@matrix-org/matrix-sdk-crypto-nodejs,node-llama-cpp'
+
+onlyBuiltDependencies:
+  - '@lydell/node-pty'
+  - '@matrix-org/matrix-sdk-crypto-nodejs'
+  - '@napi-rs/canvas'
+  - '@whiskeysockets/baileys'
+  - authenticate-pam
+  - esbuild
+  - node-llama-cpp
+  - protobufjs
+  - sharp
+
+supportedArchitectures: '{os:[win32],cpu:[x64]}'
